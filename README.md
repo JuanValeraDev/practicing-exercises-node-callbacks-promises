@@ -1,4 +1,4 @@
-# This is an exercise for practising with Node, Callbacks and Promises. 
+# This is an exercise for practicing with Node, Callbacks and Promises. 
 
 ### It is taken from this repo owned by Midudev: https://github.com/midudev/pruebas-tecnicas.git
 
