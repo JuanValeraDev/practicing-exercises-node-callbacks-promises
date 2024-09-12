@@ -92,5 +92,26 @@ async function procesarArchivo() {
 procesarArchivo();
 
  */
+//4 - ¿Cómo mejorarías el siguiente código y por qué? Arregla los tests si es necesario:
+
+//Respuesta: Ahora mismo se procesan los archivos de forma síncrona, es decir el hilo primero procesa un fichero
+//luego otro y luego otro. Para mejorar la eficiencia podemos hacer que el hilo procese los tres ficheros
+//a la vez de forma asíncrona.
+/*
+import fs from 'node:fs';
+
+export async function leerArchivos() {
+
+    const archivo1 = fs.promises.readFile('../archivo1.txt', 'utf8')
+    const archivo2 = fs.promises.readFile('../archivo2.txt', 'utf8')
+    const archivo3 = fs.promises.readFile('../archivo3.txt', 'utf8')
+
+    const [texto1, texto2, texto3] =
+        await Promise.all([archivo1, archivo2, archivo3])
+    return `${texto1} ${texto2} ${texto3}`
+}
+
+console.log(await leerArchivos())
 
 
+ */
