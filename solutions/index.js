@@ -115,3 +115,25 @@ console.log(await leerArchivos())
 
 
  */
+
+//5 - Escribe una funcion `delay` que retorne una promesa que se resuelva después de `n` milisegundos. Por ejemplo:
+
+/*
+export async function delay(time) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Resolved")
+        }, time)
+    })
+}
+
+delay(1000).then(() => console.log('Hola mundo'));
+
+ */
+
+
+import {config} from './dotenv.js'
+
+config()
+console.log(process.env.PORT)
+console.log(process.env.TOKEN)
