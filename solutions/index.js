@@ -131,9 +131,39 @@ delay(1000).then(() => console.log('Hola mundo'));
 
  */
 
-
+//6. dotenv
+/*
 import {config} from './dotenv.js'
 
 config()
 console.log(process.env.PORT)
 console.log(process.env.TOKEN)
+*/
+
+//7. API REST
+import axios from 'axios'
+/*
+axios.patch("http://localhost:3000/items/4",  {"content":"Updated content"}).then(res => console.log(res.data)).catch(error => {
+    console.error(error.message)
+})
+
+axios.get("http://localhost:3000/items/3").then(res => console.log(res.data)).catch(error => console.error(error.message))
+axios.get("http://localhost:3000/items/4").then(res => console.log(res.data)).catch(error => console.error(error.message))
+
+axios.put("http://localhost:3000/items/3", {"content":"put content"}).then(res => console.log(res.data)).catch(error => {
+    console.error(error.message)
+})
+
+
+
+axios.post("http://localhost:3000/items", {id: 60, content: "Posted item"})
+    .then(res => console.log(res.data)).catch(error => console.error(error.message))
+
+
+
+
+axios.delete("http://localhost:3000/items/5").then(res => console.log(res.data)).catch(error => console.error(error.message))
+
+axios.get("http://localhost:3000/items").then(res => console.log(res.data)).catch(error => console.error(error.message))
+
+ */
